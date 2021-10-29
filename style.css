@@ -1,0 +1,167 @@
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Description:  A child theme of Twenty Twenty-One WordPress theme.
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url("../twentytwentyone/style.css");
+
+:root {
+    --uxhacks--color-yellow: #facf5a;
+    --uxhacks--color-dark-blue: #233142;
+    --uxhacks--color-green: #4f9da6;
+    --uxhacks--color-red: #ff5959;
+    --uxhacks--color-blue: #0170ca;
+    --uxhacks--color-white: #ffffff;
+    --uxhacks--color-black: #000000;
+}
+
+/* Set Background Colors */
+.has-yellow-background-color[class],
+.wp-block-button:not(.is-style-outline) .has-yellow-background-color:not(:hover):not(:active):not(.has-text-color)   {
+    background-color: var(--uxhacks--color-yellow);
+    color: var(--uxhacks--color-dark-blue);
+}
+.has-dark-blue-background-color[class],
+.wp-block-button:not(.is-style-outline) .has-dark-blue-background-color:not(:hover):not(:active):not(.has-text-color) {
+    background-color: var(--uxhacks--color-dark-blue);
+    color: var(--uxhacks--color-white);
+}
+.has-green-background-color[class],
+.wp-block-button:not(.is-style-outline) .has-green-background-color:not(:hover):not(:active):not(.has-text-color) {
+    background-color: var(--uxhacks--color-green);
+    color: var(--uxhacks--color-black);
+}
+.has-red-background-color[class],
+.wp-block-button:not(.is-style-outline) .has-red-background-color:not(:hover):not(:active):not(.has-text-color) {
+    background-color: var(--uxhacks--color-red);
+    color: var(--uxhacks--color-black);
+}
+.has-blue-background-color[class],
+.wp-block-button:not(.is-style-outline) .has-blue-background-color:not(:hover):not(:active):not(.has-text-color) {
+    background-color: var(--uxhacks--color-blue);
+    color: var(--uxhacks--color-white);
+}
+.has-white-background-color[class],
+.wp-block-button:not(.is-style-outline) .has-white-background-color:not(:hover):not(:active):not(.has-text-color) {
+    background-color: var(--uxhacks--color-white);
+    color: var(--uxhacks--color-dark-blue);
+}
+
+
+/* Set Colors */
+.has-yellow-color[class] {
+    color: var(--uxhacks--color-yellow);
+}
+.has-dark-blue-color[class] {
+    color: var(--uxhacks--color-dark-blue);
+}
+.has-green-color[class] {
+    color:var(--uxhacks--color-green);
+}
+.has-red-color[class] {
+    color:var(--uxhacks--color-red);
+}
+.has-blue-color[class] {
+    color:var(--uxhacks--color-blue);
+}
+.has-white-color[class] {
+    color:var(--uxhacks--color-white);
+}
+
+/* Set Hover Colors for Solid Buttons */
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover, 
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
+    color:unset!important;
+    background-color:unset!important;
+    border-color:unset!important;
+}
+
+.wp-block-button:not(.is-style-outline) .has-yellow-background-color:hover, 
+.wp-block-button:not(.is-style-outline) .has-yellow-background-color:active {
+    color:var(--uxhacks--color-white)!important;
+    background-color:var(--uxhacks--color-blue)!important;
+    border-color:var(--uxhacks--color-blue)!important;
+}
+
+.wp-block-button:not(.is-style-outline) .has-dark-blue-background-color:hover, 
+.wp-block-button:not(.is-style-outline) .has-dark-blue-background-color:active {
+    color:var(--uxhacks--color-dark-blue)!important;
+    background-color:var(--uxhacks--color-white)!important;
+    border-color:var(--uxhacks--color-white)!important;
+}
+
+.wp-block-button:not(.is-style-outline) .has-green-background-color:hover, 
+.wp-block-button:not(.is-style-outline) .has-green-background-color:active {
+    color:var(--uxhacks--color-black)!important;
+    background-color:var(--uxhacks--color-red)!important;
+    border-color:var(--uxhacks--color-red)!important;
+}
+
+.wp-block-button:not(.is-style-outline) .has-red-background-color:hover, 
+.wp-block-button:not(.is-style-outline) .has-red-background-color:active {
+    color:var(--uxhacks--color-black)!important;
+    background-color:var(--uxhacks--color-green)!important;
+    border-color:var(--uxhacks--color-green)!important;
+}
+
+.wp-block-button:not(.is-style-outline) .has-blue-background-color:hover, 
+.wp-block-button:not(.is-style-outline) .has-blue-background-color:active {
+    color:var(--uxhacks--color-dark-blue)!important;
+    background-color:var(--uxhacks--color-yellow)!important;
+    border-color:var(--uxhacks--color-yellow)!important;
+}
+
+.wp-block-button:not(.is-style-outline) .has-white-background-color:hover, 
+.wp-block-button:not(.is-style-outline) .has-white-background-color:active {
+    color:var(--uxhacks--color-white)!important;
+    background-color:var(--uxhacks--color-dark-blue)!important;
+    border-color:var(--uxhacks--color-dark-blue)!important;
+}
+
+/* Set Hover Colors for Outline Buttons */
+.wp-block-button.is-style-outline .wp-block-button__link:hover, 
+.wp-block-button.is-style-outline .wp-block-button__link:active {
+    color:unset!important;
+    background-color:unset!important;
+    border-color:unset!important;
+}
+.wp-block-button.is-style-outline .has-yellow-color:hover, 
+.wp-block-button.is-style-outline .has-yellow-color:active {
+    color:var(--uxhacks--color-dark-blue)!important;
+    background-color:var(--uxhacks--color-yellow)!important;
+    border-color:var(--uxhacks--color-yellow)!important;
+}
+.wp-block-button.is-style-outline .has-dark-blue-color:hover, 
+.wp-block-button.is-style-outline .has-dark-blue-color:active {
+    background-color: var(--uxhacks--color-dark-blue)!important;
+    color: var(--uxhacks--color-white)!important;
+    border-color: var(--uxhacks--color-dark-blue)!important;
+}
+.wp-block-button.is-style-outline .has-green-color:hover, 
+.wp-block-button.is-style-outline .has-green-color:active {
+    background-color: var(--uxhacks--color-green)!important;
+    color: var(--uxhacks--color-black)!important;
+    border-color: var(--uxhacks--color-green)!important;
+}
+.wp-block-button.is-style-outline .has-red-color:hover, 
+.wp-block-button.is-style-outline .has-red-color:active {
+    background-color: var(--uxhacks--color-red)!important;
+    color: var(--uxhacks--color-black)!important;
+    border-color: var(--uxhacks--color-red)!important;
+}
+.wp-block-button.is-style-outline .has-blue-color:hover, 
+.wp-block-button.is-style-outline .has-blue-color:active {
+    background-color: var(--uxhacks--color-blue)!important;
+    color: var(--uxhacks--color-white)!important;
+    border-color: var(--uxhacks--color-blue)!important;
+}
+.wp-block-button.is-style-outline .has-white-color:hover, 
+.wp-block-button.is-style-outline .has-white-color:active {
+    background-color: var(--uxhacks--color-white)!important;
+    color: var(--uxhacks--color-dark-blue)!important;
+    border-color: var(--uxhacks--color-white)!important;
+}
